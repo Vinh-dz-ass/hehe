@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to top right, #fce4ec, #f8bbd0);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+.typing-text {
+  font-size: 24px;
+  color: #e91e63;
+  animation: typing 3s steps(40, end);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #e91e63;
+}
+.typing-delay {
+  opacity: 0;
+  animation: fadeIn 4s ease forwards 3s;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #444;
+}
+.buttons {
+  margin-top: 30px;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:first-child {
+  background-color: #f06292;
+  color: white;
+}
+button:last-child {
+  background-color: #e0e0e0;
+}
+#response {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #e91e63;
+  min-height: 40px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes fadeIn {
+  to { opacity: 1 }
+}
